@@ -1,5 +1,10 @@
-# MisRCON
-Miscreated server administration utility
+# title           :miscron.py
+# description     : Runs commands to a server
+# author          :Chris Sprance / Entrada Interactive
+# usage           : This script is CLI for server administaration to run it from a command line do:
+# misrcon.py -i [ip] --port [admin port] -p [admin password] --command [command] --time [exec_time] --s [schedule]
+# python_version  :2.7.5
+
 
 To run this program you must have Python 2.7 installed on your machine somewhere.
 
