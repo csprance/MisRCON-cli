@@ -13,7 +13,9 @@ import argparse
 from datetime import datetime
 from datetime import timedelta
 from threading import Timer
-from gooey import Gooey
+
+# GooeyTurnOff
+# from gooey import Gooey
 
 
 class SpecialTransport(xmlrpclib.Transport):
@@ -94,7 +96,8 @@ def send_rcon(server_url, password, cmdstring, exec_time=False, schedule_only=Fa
                 md5) == 'authorized' else 'Authentication Failed......'
 
 
-@Gooey
+# GooeyTurnOff
+# @Gooey
 def main():
     parser = argparse.ArgumentParser('MisRCON - Server RCON CLI for Miscreated')
     parser.add_argument('-i', '--ip', type=str, required=True,
