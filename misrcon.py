@@ -109,13 +109,11 @@ def main():
     parser.add_argument('-c', '--command', type=str, required=True,
                         help="Command string to send sv_say Server shutting down in 5 minutes")
     parser.add_argument('-t', '--time', type=str, required=False,
-                        help="The time you want to run the command again. This will always be 1 day ahead. ex: 16:45")
+                        help="The time you want to run the command again. 16:45 +1day")
     parser.add_argument('-s', '--schedule_only', required=False, action='store_true',
-                        help="Should we only schedule or schedule and run it.")
+                        help="Should we only schedule?")
     args = parser.parse_args()
     ip = args.ip
-    # port = str(int(get['port'].value) + 4)
-    # workaround for no server panel from i3d
     port = args.port
     password = args.password
     command = args.command
